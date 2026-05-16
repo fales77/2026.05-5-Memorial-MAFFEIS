@@ -23,7 +23,7 @@
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Arial', sans-serif;
     background: var(--grigio-chiaro);
     color: var(--testo-scuro);
     min-height: 100vh;
@@ -69,7 +69,7 @@
     display: flex;
     align-items: center;
     gap: 6px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arial', sans-serif; /*Barlow Condensed*/
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -80,21 +80,8 @@
     position: relative; z-index: 1;
     text-align: center;
   }
-  .edition-badge {
-    display: inline-block;
-    background: var(--rosso);
-    color: white;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 3px 12px;
-    border-radius: 2px;
-    margin-bottom: 8px;
-  }
   .header-title {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 28px;
     font-weight: 900;
     line-height: 1;
@@ -149,7 +136,7 @@
   }
   .tab {
     padding: 12px 16px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -185,53 +172,36 @@
     .groups-grid { grid-template-columns: 1fr; }
   }
 
- /* GROUP CARD - Stile come nell'immagine */
-.group-card {
+  /* GROUP CARD */
+  .group-card {
     background: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
-}
-.group-card:active { transform: scale(0.97); }
-
-.group-header {
-    background: #1e3a6b;           /* Blu scuro come nell'immagine */
+  }
+  .group-card:active { transform: scale(0.97); }
+  .group-header {
+    background: #1e3a6b;
     padding: 14px 16px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.group-label {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.75);
-}
-.group-letter {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px;
-    font-weight: 900;
-    color: white;
-    line-height: 1;
-    margin-top: 2px;
-}
+  }
   .group-teams {
     padding: 8px 12px;
   }
   .group-team-name {
-    font-size: 14px;           /* Ingrandito */
+    font-size: 14px;
     font-weight: 700;
     color: var(--testo-scuro);
     padding: 4px 0;
     border-bottom: 1px solid var(--grigio-chiaro);
     text-transform: uppercase;
     letter-spacing: 0.4px;
-}
+  }
   .group-team-name:last-child { border-bottom: none; }
 
   /* STANDINGS */
@@ -250,7 +220,7 @@
     justify-content: space-between;
   }
   .standings-title {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
     font-weight: 800;
     color: white;
@@ -258,7 +228,7 @@
     letter-spacing: 1px;
   }
   .standings-letter {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 28px;
     font-weight: 900;
     color: var(--oro);
@@ -272,7 +242,7 @@
     background: var(--blu-scuro);
   }
   .standings-table thead th {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -290,19 +260,19 @@
   .standings-table tbody td {
     padding: 9px 8px;
     text-align: center;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--testo-scuro);
   }
   .standings-table tbody td:first-child {
     text-align: left;
     padding-left: 14px;
-    font-size: 14.5px;        /* Ingrandito */
+    font-size: 14.5px;
     font-weight: 700;
     text-transform: uppercase;
     max-width: 140px;
     line-height: 1.35;
-}
+  }
   .pos-badge {
     display: inline-flex;
     align-items: center;
@@ -319,7 +289,7 @@
   .pos-3 { background: var(--rosso); color: white; }
   .pos-other { background: var(--grigio-medio); color: var(--grigio-testo); }
   .pts-cell {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
     font-weight: 900;
     color: var(--blu);
@@ -341,14 +311,6 @@
     align-items: center;
     justify-content: space-between;
   }
-  .matches-group-title {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 15px;
-    font-weight: 800;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
   .match-card {
     padding: 10px 14px;
     border-bottom: 1px solid var(--grigio-chiaro);
@@ -366,25 +328,25 @@
     line-height: 1.3;
   }
   .match-date .time {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 13px;
     font-weight: 700;
     color: var(--blu);
     display: block;
   }
   .match-team {
-    font-size: 14px;           /* Ingrandito */
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.4px;
     color: var(--testo-scuro);
     line-height: 1.3;
-}
+  }
   .match-team.home { text-align: right; }
   .match-team.away { text-align: left; }
   .match-score {
     text-align: center;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 15px;
     font-weight: 900;
     color: white;
@@ -424,10 +386,9 @@
   }
   .phase-header.playoff { background: linear-gradient(135deg, var(--blu-scuro), var(--blu-medio)); }
   .phase-header.finals { background: linear-gradient(135deg, var(--rosso-scuro), var(--rosso)); }
-  .phase-header.nazionale { background: linear-gradient(135deg, #2d6a27, #3d8a35); }
   .phase-icon { font-size: 24px; }
   .phase-title {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 18px;
     font-weight: 900;
     text-transform: uppercase;
@@ -444,7 +405,7 @@
   }
   .playoff-match:last-child { border-bottom: none; }
   .playoff-num {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 18px;
     font-weight: 900;
     color: var(--blu);
@@ -466,7 +427,7 @@
     gap: 6px;
   }
   .playoff-time-badge {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 12px;
     font-weight: 700;
     color: white;
@@ -495,7 +456,7 @@
     align-items: center;
   }
   .finals-time-badge {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 12px;
     font-weight: 700;
     color: white;
@@ -515,7 +476,7 @@
   }
   .nazionale-banner .icon { font-size: 28px; margin-bottom: 8px; }
   .nazionale-banner .title {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 18px;
     font-weight: 900;
     text-transform: uppercase;
@@ -546,31 +507,29 @@
     line-height: 1.65;
     font-weight: 500;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.info-banner strong {
+  }
+  .info-banner strong {
     color: var(--oro);
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14.5px;
     letter-spacing: 0.5px;
-}
+  }
 </style>
 </head>
 <body>
 
 <div class="header">
   <div class="header-logos">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Federazione_Italiana_Giuoco_Calcio_Logo_2021.png" 
-         alt="FIGC Logo Ufficiale" 
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Federazione_Italiana_Giuoco_Calcio_Logo_2021.png"
+         alt="FIGC Logo Ufficiale"
          class="figc-logo">
-
     <div class="logo-badge" style="flex-direction:column;align-items:flex-end;gap:2px">
       <div style="font-size:9px;color:rgba(255,255,255,0.5)">ACADEMY ELITE</div>
       <div style="font-size:9px;color:rgba(255,255,255,0.5)">VOLPIANO</div>
     </div>
   </div>
 
-  <div class="header-main">    
+  <div class="header-main">
     <div class="header-title">5° Memorial<br><span>Silvano Maffeis</span></div>
     <div class="header-category">Esordienti 2° Anno · Under 13</div>
   </div>
@@ -595,20 +554,16 @@
   <div class="section active" id="gironi">
     <div class="groups-grid">
       <div class="group-card">
-		<div class="group-header">
-			<div class="standings-title">Girone A</div>	
-		</div>
-		<div class="group-teams">
-			<div class="group-team-name">Volpiano Pianese</div>
-			<div class="group-team-name">Vanchiglia</div>
-			<div class="group-team-name">Cirié</div>
-			<div class="group-team-name">PSG</div>
-		</div>
-	</div>
+        <div class="group-header"><div class="standings-title">Girone A</div></div>
+        <div class="group-teams">
+          <div class="group-team-name">Volpiano Pianese</div>
+          <div class="group-team-name">Vanchiglia</div>
+          <div class="group-team-name">Cirié</div>
+          <div class="group-team-name">PSG</div>
+        </div>
+      </div>
       <div class="group-card">
-		<div class="group-header">
-			<div class="standings-title">Girone B</div>			
-		</div>
+        <div class="group-header"><div class="standings-title">Girone B</div></div>
         <div class="group-teams">
           <div class="group-team-name">Chisola</div>
           <div class="group-team-name">Rivarolese</div>
@@ -617,9 +572,7 @@
         </div>
       </div>
       <div class="group-card">
-        <div class="group-header">
-			<div class="standings-title">Girone C</div>
-		</div>
+        <div class="group-header"><div class="standings-title">Girone C</div></div>
         <div class="group-teams">
           <div class="group-team-name">Alpignano</div>
           <div class="group-team-name">Venaria</div>
@@ -628,9 +581,7 @@
         </div>
       </div>
       <div class="group-card">
-        <div class="group-header">
-			<div class="standings-title">Girone D</div>
-		</div>
+        <div class="group-header"><div class="standings-title">Girone D</div></div>
         <div class="group-teams">
           <div class="group-team-name">Sisport</div>
           <div class="group-team-name">Lucento</div>
@@ -639,9 +590,7 @@
         </div>
       </div>
       <div class="group-card">
-        <div class="group-header">
-			<div class="standings-title">Girone E</div>
-		</div>
+        <div class="group-header"><div class="standings-title">Girone E</div></div>
         <div class="group-teams">
           <div class="group-team-name">Lascaris</div>
           <div class="group-team-name">Chieri</div>
@@ -650,9 +599,7 @@
         </div>
       </div>
       <div class="group-card">
-        <div class="group-header">
-			<div class="standings-title">Girone F</div>
-		</div>
+        <div class="group-header"><div class="standings-title">Girone F</div></div>
         <div class="group-teams">
           <div class="group-team-name">CBS</div>
           <div class="group-team-name">Cenisia</div>
@@ -666,29 +613,20 @@
       <div class="info-banner">
         <strong>📋 FORMATO GARE</strong><br>
         Due tempi da 25 minuti · Campo sintetico
-	</div>
-	<div class="info-banner">
-		<strong>📋 REGOLE DI QUALIFICAZIONE</strong><br>
-		Le <strong style="color:var(--oro)">prime</strong> classificate accedono direttamente alle Finali.<br>
-		Le <strong style="color:var(--oro)">seconde</strong> e <strong>terze</strong> classificate disputano i Playoff.
-	</div>
-	</div>
-</div>
-  
+      </div>
+      <div class="info-banner">
+        <strong>📋 REGOLE DI QUALIFICAZIONE</strong><br>
+        Le <strong style="color:var(--oro)">prime</strong> classificate accedono direttamente alle Finali.<br>
+        Le <strong style="color:var(--oro)">seconde</strong> e <strong>terze</strong> classificate disputano i Playoff.
+      </div>
+    </div>
+  </div>
 
   <!-- CLASSIFICA -->
   <div class="section" id="classifica">
-    <!-- <div class="legend-row" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
-      <div class="legend-item"><div class="legend-dot" style="background:var(--oro);width:12px;height:12px;border-radius:50%;"></div> 1° posto</div>
-      <div class="legend-item"><div class="legend-dot" style="background:var(--blu);width:12px;height:12px;border-radius:50%;"></div> 2° posto</div>
-      <div class="legend-item"><div class="legend-dot" style="background:var(--rosso);width:12px;height:12px;border-radius:50%;"></div> 3° posto</div>
-    </div>
 
-    <!-- Girone A -->
     <div class="standings-card">
-      <div class="standings-header">
-        <div class="standings-title">Girone A</div>	
-       </div>
+      <div class="standings-header"><div class="standings-title">Girone A</div></div>
       <table class="standings-table">
         <thead><tr><th></th><th>G</th><th>PT</th><th>GF</th><th>GS</th></tr></thead>
         <tbody>
@@ -700,12 +638,8 @@
       </table>
     </div>
 
-    <!-- Girone B -->
     <div class="standings-card">
-      <div class="standings-header">
-        <div class="standings-title">Girone B</div>
-        <div class="standings-letter">B</div>
-      </div>
+      <div class="standings-header"><div class="standings-title">Girone B</div></div>
       <table class="standings-table">
         <thead><tr><th></th><th>G</th><th>PT</th><th>GF</th><th>GS</th></tr></thead>
         <tbody>
@@ -717,12 +651,8 @@
       </table>
     </div>
 
-    <!-- Girone C -->
     <div class="standings-card">
-      <div class="standings-header">
-        <div class="standings-title">Girone C</div>
-        <div class="standings-letter">C</div>
-      </div>
+      <div class="standings-header"><div class="standings-title">Girone C</div></div>
       <table class="standings-table">
         <thead><tr><th></th><th>G</th><th>PT</th><th>GF</th><th>GS</th></tr></thead>
         <tbody>
@@ -734,12 +664,8 @@
       </table>
     </div>
 
-    <!-- Girone D -->
     <div class="standings-card">
-      <div class="standings-header">
-        <div class="standings-title">Girone D</div>
-        <div class="standings-letter">D</div>
-      </div>
+      <div class="standings-header"><div class="standings-title">Girone D</div></div>
       <table class="standings-table">
         <thead><tr><th></th><th>G</th><th>PT</th><th>GF</th><th>GS</th></tr></thead>
         <tbody>
@@ -751,12 +677,8 @@
       </table>
     </div>
 
-    <!-- Girone E -->
     <div class="standings-card">
-      <div class="standings-header">
-        <div class="standings-title">Girone E</div>
-        <div class="standings-letter">E</div>
-      </div>
+      <div class="standings-header"><div class="standings-title">Girone E</div></div>
       <table class="standings-table">
         <thead><tr><th></th><th>G</th><th>PT</th><th>GF</th><th>GS</th></tr></thead>
         <tbody>
@@ -768,12 +690,8 @@
       </table>
     </div>
 
-    <!-- Girone F -->
     <div class="standings-card">
-      <div class="standings-header">
-        <div class="standings-title">Girone F</div>
-        <div class="standings-letter">F</div>
-      </div>
+      <div class="standings-header"><div class="standings-title">Girone F</div></div>
       <table class="standings-table">
         <thead><tr><th></th><th>G</th><th>PT</th><th>GF</th><th>GS</th></tr></thead>
         <tbody>
@@ -791,21 +709,12 @@
 
     <!-- Girone A -->
     <div class="matches-group">
-      <div class="matches-group-header">
-        <div class="standings-title">Girone A</div>	
-       </div>
-
+      <div class="matches-group-header"><div class="standings-title">Girone A</div></div>
       <div class="match-card">
         <div class="match-date">10/05<span class="time">09:30</span></div>
         <div class="match-team home">Vanchiglia</div>
         <div class="match-score">0 - 1</div>
         <div class="match-team away">Cirié</div>
-      </div>
-      <div class="match-card">
-        <div class="match-date">31/05<span class="time">15:00</span></div>
-        <div class="match-team home">Volpiano P.</div>
-        <div class="match-score pending">vs</div>
-        <div class="match-team away">PSG</div>
       </div>
       <div class="match-card">
         <div class="match-date">17/05<span class="time">18:00</span></div>
@@ -831,13 +740,17 @@
         <div class="match-score pending">vs</div>
         <div class="match-team away">PSG</div>
       </div>
+      <div class="match-card">
+        <div class="match-date">31/05<span class="time">15:00</span></div>
+        <div class="match-team home">Volpiano P.</div>
+        <div class="match-score pending">vs</div>
+        <div class="match-team away">PSG</div>
+      </div>
     </div>
 
     <!-- Girone B -->
     <div class="matches-group">
-      <div class="matches-group-header">
-        <div class="standings-title">Girone B</div>	
-       </div>
+      <div class="matches-group-header"><div class="standings-title">Girone B</div></div>
       <div class="match-card">
         <div class="match-date">09/05<span class="time">11:00</span></div>
         <div class="match-team home">Rivarolese</div>
@@ -878,9 +791,7 @@
 
     <!-- Girone C -->
     <div class="matches-group">
-      <div class="matches-group-header">
-        <div class="standings-title">Girone C</div>	
-       </div>
+      <div class="matches-group-header"><div class="standings-title">Girone C</div></div>
       <div class="match-card">
         <div class="match-date">09/05<span class="time">14:00</span></div>
         <div class="match-team home">Alpignano</div>
@@ -921,9 +832,7 @@
 
     <!-- Girone D -->
     <div class="matches-group">
-      <div class="matches-group-header">
-        <div class="standings-title">Girone D</div>	
-       </div>
+      <div class="matches-group-header"><div class="standings-title">Girone D</div></div>
       <div class="match-card">
         <div class="match-date">09/05<span class="time">10:00</span></div>
         <div class="match-team home">Lucento</div>
@@ -949,24 +858,22 @@
         <div class="match-team away">Lucento</div>
       </div>
       <div class="match-card">
-        <div class="match-date">30/05<span class="time">10:30</span></div>
-        <div class="match-team home">Vinovo S.E.</div>
-        <div class="match-score pending">vs</div>
-        <div class="match-team away">Sisport</div>
-      </div>
-      <div class="match-card">
         <div class="match-date">24/05<span class="time">11:30</span></div>
         <div class="match-team home">Pianezza</div>
         <div class="match-score pending">vs</div>
         <div class="match-team away">Lucento</div>
       </div>
+      <div class="match-card">
+        <div class="match-date">30/05<span class="time">10:30</span></div>
+        <div class="match-team home">Vinovo S.E.</div>
+        <div class="match-score pending">vs</div>
+        <div class="match-team away">Sisport</div>
+      </div>
     </div>
 
     <!-- Girone E -->
     <div class="matches-group">
-      <div class="matches-group-header">
-        <div class="standings-title">Girone E</div>	
-       </div>
+      <div class="matches-group-header"><div class="standings-title">Girone E</div></div>
       <div class="match-card">
         <div class="match-date">10/05<span class="time">10:30</span></div>
         <div class="match-team home">Chieri</div>
@@ -998,7 +905,7 @@
         <div class="match-team away">Borgaro</div>
       </div>
       <div class="match-card">
-        <div class="match-date">30/06<span class="time">11:30</span></div>
+        <div class="match-date">30/05<span class="time">11:30</span></div><!-- CORRETTO: era 30/06 -->
         <div class="match-team home">Lascaris</div>
         <div class="match-score pending">vs</div>
         <div class="match-team away">Borgaro</div>
@@ -1007,9 +914,7 @@
 
     <!-- Girone F -->
     <div class="matches-group">
-      <div class="matches-group-header">
-        <div class="standings-title">Girone F</div>	
-       </div>>
+      <div class="matches-group-header"><div class="standings-title">Girone F</div></div>
       <div class="match-card">
         <div class="match-date">09/05<span class="time">12:00</span></div>
         <div class="match-team home">CBS</div>
@@ -1051,14 +956,14 @@
   </div>
 
   <!-- PLAYOFF & FINALI -->
-<div class="section" id="playoff">
-  <div class="info-banner">
-		<strong>📋 REGOLE DI QUALIFICAZIONE</strong><br>
-		Le <strong style="color:var(--oro)">prime</strong> classificate accedono direttamente alle Finali.<br>
-		Le <strong style="color:var(--oro)">seconde</strong> e <strong>terze</strong> classificate disputano i Playoff.
-	</div>
-	
-<!-- PLAYOFF -->
+  <div class="section" id="playoff">
+    <div class="info-banner">
+      <strong>📋 REGOLE DI QUALIFICAZIONE</strong><br>
+      Le <strong style="color:var(--oro)">prime</strong> classificate accedono direttamente alle Finali.<br>
+      Le <strong style="color:var(--oro)">seconde</strong> e <strong>terze</strong> classificate disputano i Playoff.
+    </div>
+
+    <!-- PLAYOFF -->
     <div class="phase-card">
       <div class="phase-header playoff">
         <div class="phase-icon">⚡</div>
@@ -1067,65 +972,46 @@
           <div class="phase-subtitle">6–7 Giugno 2026 · due tempi da 25 minuti</div>
         </div>
       </div>
-
       <div class="playoff-match">
         <div class="playoff-num">(1)</div>
         <div class="playoff-info">
           <div class="playoff-matchup">2ª Girone A — 3ª Girone F</div>
-          <div class="playoff-datetime">
-            <span class="playoff-time-badge">06/06 15:00</span>
-            Campo Sintetico
-          </div>
+          <div class="playoff-datetime"><span class="playoff-time-badge">06/06 15:00</span>Campo Sintetico</div>
         </div>
       </div>
       <div class="playoff-match">
         <div class="playoff-num">(2)</div>
         <div class="playoff-info">
           <div class="playoff-matchup">2ª Girone B — 3ª Girone E</div>
-          <div class="playoff-datetime">
-            <span class="playoff-time-badge">06/06 16:00</span>
-            Campo Sintetico
-          </div>
+          <div class="playoff-datetime"><span class="playoff-time-badge">06/06 16:00</span>Campo Sintetico</div>
         </div>
       </div>
       <div class="playoff-match">
         <div class="playoff-num">(3)</div>
         <div class="playoff-info">
           <div class="playoff-matchup">2ª Girone C — 3ª Girone D</div>
-          <div class="playoff-datetime">
-            <span class="playoff-time-badge">06/06 17:00</span>
-            Campo Sintetico
-          </div>
+          <div class="playoff-datetime"><span class="playoff-time-badge">06/06 17:00</span>Campo Sintetico</div>
         </div>
       </div>
       <div class="playoff-match">
         <div class="playoff-num">(4)</div>
         <div class="playoff-info">
           <div class="playoff-matchup">2ª Girone D — 3ª Girone C</div>
-          <div class="playoff-datetime">
-            <span class="playoff-time-badge">07/06 15:00</span>
-            Campo Sintetico
-          </div>
+          <div class="playoff-datetime"><span class="playoff-time-badge">07/06 15:00</span>Campo Sintetico</div>
         </div>
       </div>
       <div class="playoff-match">
         <div class="playoff-num">(5)</div>
         <div class="playoff-info">
           <div class="playoff-matchup">2ª Girone E — 3ª Girone B</div>
-          <div class="playoff-datetime">
-            <span class="playoff-time-badge">07/06 16:00</span>
-            Campo Sintetico
-          </div>
+          <div class="playoff-datetime"><span class="playoff-time-badge">07/06 16:00</span>Campo Sintetico</div>
         </div>
       </div>
       <div class="playoff-match">
         <div class="playoff-num">(6)</div>
         <div class="playoff-info">
           <div class="playoff-matchup">2ª Girone F — 3ª Girone A</div>
-          <div class="playoff-datetime">
-            <span class="playoff-time-badge">07/06 17:00</span>
-            Campo Sintetico
-          </div>
+          <div class="playoff-datetime"><span class="playoff-time-badge">07/06 17:00</span>Campo Sintetico</div>
         </div>
       </div>
     </div>
@@ -1139,42 +1025,29 @@
           <div class="phase-subtitle">13–14 Giugno 2026 · due tempi da 25 minuti</div>
         </div>
       </div>
-
       <div class="finals-match">
         <div class="finals-matchup">1ª Girone A — Vincente Playoff 4</div>
-        <div class="finals-datetime">
-          <span class="finals-time-badge">13/06 15:00</span>Campo Sintetico
-        </div>
+        <div class="finals-datetime"><span class="finals-time-badge">13/06 15:00</span>Campo Sintetico</div>
       </div>
       <div class="finals-match">
         <div class="finals-matchup">1ª Girone B — Vincente Playoff 6</div>
-        <div class="finals-datetime">
-          <span class="finals-time-badge">13/06 16:00</span>Campo Sintetico
-        </div>
+        <div class="finals-datetime"><span class="finals-time-badge">13/06 16:00</span>Campo Sintetico</div>
       </div>
       <div class="finals-match">
         <div class="finals-matchup">1ª Girone C — Vincente Playoff 5</div>
-        <div class="finals-datetime">
-          <span class="finals-time-badge">13/06 17:00</span>Campo Sintetico
-        </div>
+        <div class="finals-datetime"><span class="finals-time-badge">13/06 17:00</span>Campo Sintetico</div>
       </div>
       <div class="finals-match">
         <div class="finals-matchup">1ª Girone D — Vincente Playoff 1</div>
-        <div class="finals-datetime">
-          <span class="finals-time-badge">14/06 15:00</span>Campo Sintetico
-        </div>
+        <div class="finals-datetime"><span class="finals-time-badge">14/06 15:00</span>Campo Sintetico</div>
       </div>
       <div class="finals-match">
         <div class="finals-matchup">1ª Girone E — Vincente Playoff 3</div>
-        <div class="finals-datetime">
-          <span class="finals-time-badge">14/06 16:00</span>Campo Sintetico
-        </div>
+        <div class="finals-datetime"><span class="finals-time-badge">14/06 16:00</span>Campo Sintetico</div>
       </div>
       <div class="finals-match">
         <div class="finals-matchup">1ª Girone F — Vincente Playoff 2</div>
-        <div class="finals-datetime">
-          <span class="finals-time-badge">14/06 17:00</span>Campo Sintetico
-        </div>
+        <div class="finals-datetime"><span class="finals-time-badge">14/06 17:00</span>Campo Sintetico</div>
       </div>
     </div>
 
