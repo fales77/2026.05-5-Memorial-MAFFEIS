@@ -323,20 +323,21 @@
     justify-content: space-between;
   }
   .match-card {
-    padding: 10px 14px;
+    padding: 10px 12px;                    /* leggermente ridotto */
     border-bottom: 1px solid var(--grigio-chiaro);
     display: grid;
-    grid-template-columns: 70px 1fr auto 1fr;
+    grid-template-columns: 58px 1fr auto 1fr;   /* data più stretta */
     align-items: center;
-    gap: 6px;
-  }
+    gap: 8px;                              /* bilanciato */
+}
   .match-card:last-child { border-bottom: none; }
   .match-date {
     font-size: 10px;
     font-weight: 600;
     color: var(--grigio-testo);
     text-align: center;
-    line-height: 1.3;
+    line-height: 1.25;
+	min-width: 52px;          /* stabilità */
   }
   .match-date .time {
     font-family: 'Barlow Condensed', sans-serif;
@@ -349,10 +350,10 @@
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.3px;
     color: var(--testo-scuro);
-    line-height: 1.3;
-  }
+    line-height: 1.25;        /* riduce il rischio di acapo */
+}
   .match-team.home { text-align: right; }
   .match-team.away { text-align: left; }
   .match-score {
